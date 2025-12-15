@@ -2,9 +2,8 @@ import json
 import random
 import os
 
-# --- НАСТРОЙКИ ---
-INPUT_FILE = "assets/train_merged.json"  # Твой текущий файл
-OUTPUT_FILE = "train_final.json"         # Файл для обучения
+INPUT_FILE = "assets/train_merged.json"
+OUTPUT_FILE = "train_final.json"
 MAX_DURATION = 15.0
 
 def filter_and_shuffle():

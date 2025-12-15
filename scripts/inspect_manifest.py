@@ -3,9 +3,8 @@ import re
 from collections import Counter
 import sys
 
-# Настройки
 MANIFEST_FILE = "assets/train_merged.json"
-MAX_DURATION_LIMIT = 15.0  # Лимит из задания
+MAX_DURATION_LIMIT = 15.0
 
 def analyze_manifest(filepath):
     print(f"🔍 Начинаю анализ файла: {filepath} ...")
@@ -19,8 +18,6 @@ def analyze_manifest(filepath):
         "dirty_texts_samples": []
     }
     
-    # Регулярка: ищем всё, что НЕ (кириллица или пробел)
-    # Если в тексте только русские буквы и пробелы - всё ок.
     dirty_regex = re.compile(r'[^а-яё ]')
 
     try:

@@ -1,12 +1,10 @@
 import nemo.collections.asr as nemo_asr
 import json
 
-# --- НАСТРОЙКИ ---
-# Путь берем из твоих логов (последний сохраненный)
 # MODEL_PATH = "/tf/askarbek/hw1/experiments/FastConformer-Hybrid-TDT-CTC-BPE/2025-12-06_11-24-19/checkpoints/FastConformer-Hybrid-TDT-CTC-BPE.nemo"
 # MODEL_PATH = "/tf/askarbek/hw1/telegram_bot/models/FastConformer-Hybrid-TDT-CTC-BPE.nemo"
 MODEL_PATH = "/tf/askarbek/hw1/experiments/FastConformer-Hybrid-TDT-CTC-BPE/2025-12-10_18-03-40/checkpoints/FastConformer-Hybrid-TDT-CTC-BPE.nemo"
-TEST_MANIFEST = "f_test.json" # Или f_test_25nov.json (проверь имя файла!)
+TEST_MANIFEST = "f_test.json"
 # OUTPUT_FILE = "finetune_predictions.txt"
 OUTPUT_FILE = "finetune_predictions_151225.txt"
 
